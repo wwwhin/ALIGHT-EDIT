@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>ALIGHT EDIT</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!--Heading-->
+
+  <div class="heading">
+    <pre><h2 class="h1">ALIGHT EDIT</h2></pre>
+  </div>
+  
+  <!--Edit posts main button-->
+  <div onclick="stpost();" id="posts" class="box">
+    <h1 class="p">MAKE INSTA MEMES</h1>
+  </div>
+  <!--image meme editor-->
+
+  <div id="meme-editor">
+  <p><lable onclick="back1();" id="back1" class="back1">< Back</lable></p>
+  <div class="img-meme">
+  <img class="img-meme-dp" id="output" width="200" src="img/profile.jpg" />
+  <h3 id="username" class="username">Name</h3>
+  <p id="id" class="id">@_User_name_</p>
+  <p id="txt-line" class="txt-line">Your text appear here !</p>
+  <img id="output2" class="img1" src="img/image.jpg" alt="">
+  </div>
+  
+  <h4 class="controls">---CONTROLS---</h4>
+  <div id="edit" class="edit">
+   <p><input type="file"  accept="image/*" name="image" id="file"  onchange="image();" style="display: none;"></p>
+    <p><label class="upload" for="file" style="cursor: pointer;">Upload Profile Img</label></p>
+    <p><lable onclick="showalrt();" id="username-edit" class="username-edit">Name</lable></p>
+    <p><label onclick="showalrt2();" class="id-edit" id="id-edit">Username</label></p>
+    <p><label onclick="showalrt3();" class="text-line-edit">Edit Text Line</label></p>
+    <p><input type="file" accept="image/*" name="image" id="file2" onchange="image2();" style="display: none;"></p>
+    <p><label class="upload2" for="file2">Upload image</label></p>
+  </div>
+</div>
+
+ <!--Buttons-->
+
+<div id="alert" class="alert">
+  <input id="enter-username" class="alert-input" type="text" placeholder="Enter Name">
+  <input type="submit" onclick="page();" class="alert-submit">Submit</a>
+</div>
+<div id="alert2" class="alert">
+  <input id="enter-id" class="alert-input" type="text" placeholder="Enter username">
+  <input type="submit" onclick="page2();" class="alert-submit">Submit</a>
+</div>
+<div id="alert3" class="alert">
+  <input id="enter-text-line" class="alert-input" type="text" placeholder="Enter text line">
+  <input type="submit" onclick="page3();" class="alert-submit">Submit</a>
+</div>
+
+
+<div id="previewImage" style="display: none;"></div>
+
+
+
+
+<!-- load animation -->
+
+<div id="loader" class="loader"></div>
+
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>
